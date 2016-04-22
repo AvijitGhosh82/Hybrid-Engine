@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nemesis.hybrid.engine"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="nemesis.hybrid.engine.Main"
+            android:label="HYBRID ENGINE" >
+            <intent-filter>
+                <action android:name="nemesis.hybrid.engine.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="nemesis.hybrid.engine.Alternate" android:label="HYBRID COLOR ENGINE" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="nemesis.hybrid.engine.HYBRIDACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="nemesis.hybrid.engine.Statcolorpick"
+            android:label="Stat Color" >
+        </activity>
+        <activity
+            android:name="nemesis.hybrid.engine.Tilecolorpick"
+            android:label="Tile Color" >
+        </activity>
+        <activity
+            android:name="nemesis.hybrid.engine.Clockcolorpick"
+            android:label="Clock Background Color" >
+        </activity>
+        <activity
+            android:name="nemesis.hybrid.engine.Tiletextcolorpick"
+            android:label="Tile Text Color" >
+        </activity>
+        <activity
+            android:name="nemesis.hybrid.engine.Clocktextcolorpick"
+            android:label="Clock Text Color" >
+        </activity>
+        <activity
+            android:name="nemesis.hybrid.engine.Clocktextcolorpick2"
+            android:label="Tile Text Color" >
+        </activity>
+        <activity
+            android:name="nemesis.hybrid.engine.Panelcolorpick"
+            android:label="Panel Color" >
+        </activity>
+    </application>
+
+</manifest>
